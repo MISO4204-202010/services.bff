@@ -21,20 +21,32 @@ logging:
 zuul:
   routes:
     user:
-      url: http://127.0.0.1:8080/user
+      url: ${USER_HOST}/api/user
       path: /user/**
 
-    bicicleta:
-      url: http://127.0.0.1:8080/bicicleta
-      path: /bicicleta/**
+    profile:
+      url: ${USER_HOST}/api/profile
+      path: /profile/**
 
-    enterprise:
-      url: http://127.0.0.1:8080/enterprise
-      path: /enterprise/**
+    tour:
+      url: ${USER_HOST}/api/tour
+      path: /tour/**
 
-    get:
-      url: https://postman-echo.com/get
-      path: /get/**
+    bicycle:
+      url: ${BICI_HOST}/api/bicycle
+      path: /bicycle/**
+
+    rent:
+      url: ${BICI_HOST}/api/rent
+      path: /rent/**
+
+    company:
+      url: ${COMPANY_HOST}/api/company
+      path: /company/**
+
+    place:
+      url: ${PLACE_HOST}/api/v1/place
+      path: /place/**
 
 # ================
 # CORS
