@@ -1,0 +1,17 @@
+ext{
+    library = [
+            /* spring */
+            spring_boot:  'org.springframework.boot:spring-boot-starter-web',
+            spring_boot_actuator: 'org.springframework.boot:spring-boot-starter-actuator',
+            spring_cloud_starter_zuul: 'org.springframework.cloud:spring-cloud-starter-netflix-zuul:2.2.0.RELEASE',
+            
+            rxjava2: 'io.reactivex.rxjava2:rxjava:2.2.1',
+            
+            project_lombok: 'org.projectlombok:lombok:1.18.4',
+            lombok_processor: 'org.projectlombok:lombok:1.18.4',
+            gson: 'com.google.code.gson:gson:2.8.6',
+            
+    ]
+        
+    
+}

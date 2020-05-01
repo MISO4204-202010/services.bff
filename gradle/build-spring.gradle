@@ -1,0 +1,3 @@
+apply plugin: 'application'
+bootJar.enabled = true
+mainClassName = project.property('app.name.mainclass')

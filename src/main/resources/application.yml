@@ -1,0 +1,46 @@
+server:
+  servlet:
+    context-path: /bicibff
+  port: 8080
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 50000
+
+logging:
+  level:
+    root: DEBUG
+
+# ================
+# ZUUL Api Gateway
+# ===============
+zuul:
+  routes:
+    user:
+      url: http://127.0.0.1:8080/user
+      path: /user/**
+
+    bicicleta:
+      url: http://127.0.0.1:8080/bicicleta
+      path: /bicicleta/**
+
+    enterprise:
+      url: http://127.0.0.1:8080/enterprise
+      path: /enterprise/**
+
+    get:
+      url: https://postman-echo.com/get
+      path: /get/**
+
+# ================
+# CORS
+# ===============
+
+api:
+  origins:
+    front:
+      server: '*'

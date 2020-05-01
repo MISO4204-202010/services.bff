@@ -1,0 +1,26 @@
+/* ============================================================================
+   This file contains the configurations for main dependencies project
+   ============================================================================
+
+   Included from: "${rootProject.projectDir}/build.gradle"
+   ============================================================================
+ */
+repositories {
+    mavenCentral()
+}
+
+def projectPath = "$rootProject.projectDir"
+
+
+
+dependencies {
+
+    implementation library.spring_boot
+    implementation library.spring_boot_actuator
+    implementation library.spring_cloud_starter_zuul
+    implementation library.rxjava2
+    implementation library.project_lombok
+    implementation library.lombok_processor
+    implementation library.gson
+
+}
