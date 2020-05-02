@@ -48,6 +48,8 @@ zuul:
       url: ${PLACE_HOST}/api/v1/place
       path: /place/**
 
+  sensitive-headers: Cookie,Set-Cookie
+
 # ================
 # CORS
 # ===============
