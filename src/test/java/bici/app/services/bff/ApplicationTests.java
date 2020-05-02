@@ -1,4 +1,4 @@
-package bici.app.services.bff;
+/*package bici.app.services.bff;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,3 +11,4 @@ class ApplicationTests {
 	}
 
 }
+*/
