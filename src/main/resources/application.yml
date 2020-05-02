@@ -50,6 +50,7 @@ zuul:
 
   sensitive-headers: Cookie,Set-Cookie
 
+  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
 # ================
 # CORS
 # ===============
@@ -58,3 +59,5 @@ api:
   origins:
     front:
       server: '*'
+
+
